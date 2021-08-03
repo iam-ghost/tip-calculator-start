@@ -5,7 +5,7 @@
 #HINT 1: https://www.google.com/search?q=how+to+round+number+to+2+decimal+places+python&oq=how+to+round+number+to+2+decimal
 #HINT 2: https://www.kite.com/python/answers/how-to-limit-a-float-to-two-decimal-places-in-python
 print("Welcome to the tip calculator? ")
-bill = float(input("What was the total bill? "))
+bill = float(input("What was the total bill? $"))
 tip = float(input("How much tip would you pay? 10, 12, 15 (in per): "))
 people = int(input("How many people to split the bill? "))
 if tip == 10:
