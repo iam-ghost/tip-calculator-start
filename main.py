@@ -8,14 +8,8 @@ print("Welcome to the tip calculator? ")
 bill = float(input("What was the total bill? $"))
 tip = float(input("How much tip would you pay? 10, 12, 15 (in per): "))
 people = int(input("How many people to split the bill? "))
-if tip == 10:
-  amt_total = bill*1.10
-elif tip == 12:
-  amt_total = bill*1.12
-elif tip == 15:
-  amt_total = bill*1.15
-else:
-  print("Enter only from what is prompt")
+tip_per = tip / 100
+amt_total = bill + bill*tip_per
 
 amt_each = amt_total/people
 amt_each_round_to_2 = round(amt_each, 2)
