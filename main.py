@@ -12,5 +12,6 @@ tip_per = tip / 100
 amt_total = bill + bill*tip_per
 
 amt_each = amt_total/people
-amt_each_round_to_2 = round(amt_each, 2)
+#amt_each_round_to_2 = round(amt_each, 2)
+amt_each_round_to_2 = "{:.2f}".format(amt_each)
 print(f"Each person shoulf pay: {amt_each_round_to_2}")
